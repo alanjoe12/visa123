@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="../static/styles.css">
+    <title>H1B VISA prediction</title>
+   <style>
+        body{
+            background-image: url(../static/img/500x300_961149-h1b.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <form action="/predict" method="POST">
+        <div class="title">H1B VISA PREDICTION</div>
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">SECONDARY ENTITY 1</span>
+            <select name="SECONDARY_ENTITY_1" id="SECONDARY_ENTITY_1">
+                <option value="1">Yes</option>
+                <option value="0" selected>NO </option>
+                <option disabled selected></option>
+            </select>
+          </div>
+           <div class="input-box">
+            <span class="details">AGENT REPRESENTING EMPLOYER</span>
+             <select name="AGENT_REPRESENTING_EMPLOYER" id="AGENT_REPRESENTING_EMPLOYER">
+                 <option value="1">Yes</option>
+                 <option value="0" selected>NO </option>
+                  <option disabled selected></option>
+    </select>
+          </div>
+           <div class="input-box">
+            <span class="details">SUPPORT H1B</span>
+            <select name="SUPPORT_H1B" id="SUPPORT_H1B">
+                <option value="1">Yes</option>
+                 <option value="0" selected>NO </option>
+                <option disabled selected></option>
+            </select>
+          </div>
+           <div class="input-box">
+            <span class="details">H1B DEPENDENT</span>
+             <select name="H1B_DEPENDENT" id="H1B_DEPENDENT">
+               <option value="1">Yes</option>
+               <option value="0" selected>NO </option>
+               <option disabled selected></option>
+           </select>
+          </div>
+          <div class="input-box">
+            <span class="details">CONTINUED EMPLOYMENT</span>
+             <input type="text" name="CONTINUED_EMPLOYMENT" id="CONTINUED_EMPLOYMENT" required >
+          </div>
+          <div class="input-box">
+            <span class="details">CHANGE PREVIOUS EMPLOYMENT</span>
+             <input type="text" name="CHANGE_PREVIOUS_EMPLOYMENT" id="CHANGE_PREVIOUS_EMPLOYMENT" required >
+          </div>
+          <div class="input-box">
+            <span class="details">NEW CONCURRENT EMPLOYMENT</span>
+            <input type="text" name="NEW_CONCURRENT_EMPLOYMENT" id="NEW_CONCURRENT_EMPLOYMENT"required >
+          </div>
+          <div class="input-box">
+            <span class="details">CHANGE EMPLOYER</span>
+             <input type="text" name="CHANGE_EMPLOYER" id="CHANGE_EMPLOYER"required >
+          </div>
+          <div class="input-box">
+            <span class="details">AMENDED PETITION</span>
+            <input type="text" name="AMENDED_PETITION" id="AMENDED_PETITION"required >
+          </div>
+          <div class="input-box">
+            <span class="details">WILLFUL VIOLATOR</span>
+             <select name="WILLFUL_VIOLATOR" id="WILLFUL_VIOLATOR" required>
+              <option value="1">Yes</option>
+              <option value="0" selected>NO </option>
+              <option disabled selected></option>
+          </select>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Predict">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
